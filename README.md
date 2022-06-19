@@ -27,10 +27,12 @@ My rospy tutorial.
 3. Combine **ex.1** and **ex.2** -> The result is displayed on **subscriber node** (by whatever method).
 4. Install the [ROS keyboard](https://github.com/lrse/ros-keyboard) package.
     
+    ```sh
     cd ~/catkin_ws/src
     git clone https://github.com/lrse/ros-keyboard
     cd ..
     catkin_make
+    ```
     
  Construct a pipeline such that:
  * Print "forward" on **subscriber node** if key W is pressed.
