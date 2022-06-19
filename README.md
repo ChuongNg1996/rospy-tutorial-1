@@ -24,3 +24,4 @@ My rospy tutorial.
 * Print "right" if x is equal to 4. 
 
 2. Complete the [rospy (publisher-subscriber) tutorial](http://wiki.ros.org/ROS/Tutorials/WritingPublisherSubscriber%28python%29).
+3. Combine **ex.1** and **ex.2** -> The result is displayed on **subscriber node** (by whatever method).
