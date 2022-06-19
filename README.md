@@ -34,9 +34,11 @@ My rospy tutorial.
     catkin_make
     ```
     
- Construct a pipeline such that:
+ Then construct a pipeline such that:
  * Print "forward" on **subscriber node** if key W is pressed.
  * Print "backward" on **subscriber node** if key S is pressed.
  * Print "left" on **subscriber node** if key A is pressed.
  * Print "right" on **subscriber node** if key D is pressed.
  
+ HINT: 
+ * Use [rostopic](http://wiki.ros.org/rostopic) commands, such as `rostopic list` to list all the ROS topics and `rostopic echo /ros_topic` to see the message sent to the topic.
