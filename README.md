@@ -22,7 +22,8 @@ My rospy tutorial.
 * Print "backward" if x is equal to 2. 
 * Print "left" if x is equal to 3.
 * Print "right" if x is equal to 4. 
-Remember to allow permission to the file (e.g. `sudo chmod +x exercise1.py`)
+
+Remember to allow permission to the file (e.g. `sudo chmod +x exercise1.py`). To run the Python program: `python exercise1.py`
 
 2. Complete the [rospy (publisher-subscriber) tutorial](http://wiki.ros.org/ROS/Tutorials/WritingPublisherSubscriber%28python%29).
 3. Combine **ex.1** and **ex.2** -> The result is displayed on **subscriber node** (by whatever method).
@@ -43,3 +44,5 @@ Remember to allow permission to the file (e.g. `sudo chmod +x exercise1.py`)
  
  HINT: 
  * Use [rostopic](http://wiki.ros.org/rostopic) commands, such as `rostopic list` to list all the ROS topics and `rostopic echo /ros_topic` to see the messages sent to the topic.
+ * Notice what **number** is displayed on the topic when a key is pressed.
+ * The data type of callback functions must be correct.
