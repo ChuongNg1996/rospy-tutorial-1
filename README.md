@@ -25,9 +25,13 @@ My rospy tutorial.
 
 Remember to allow permission to the file (e.g. `sudo chmod +x exercise1.py`). To run the Python program: `python exercise1.py`
 
-2. Complete the [rospy (publisher-subscriber) tutorial](http://wiki.ros.org/ROS/Tutorials/WritingPublisherSubscriber%28python%29).
-3. Combine **ex.1** and **ex.2** -> The result is displayed on **subscriber node** (by whatever method).
-4. Install the [ROS keyboard](https://github.com/lrse/ros-keyboard) package.
+2. At `/usr/home/"user's name"` (`"user's name"` is arbitrary), create a ROS workspace. On terminal: 
+   ```sh
+   mkdir -p ~/catkin_ws/src
+   ```
+3. Complete the [rospy (publisher-subscriber) tutorial](http://wiki.ros.org/ROS/Tutorials/WritingPublisherSubscriber%28python%29).
+4. Combine **ex.1** and **ex.2** -> The result is displayed on **subscriber node** (by whatever method).
+5. Install the [ROS keyboard](https://github.com/lrse/ros-keyboard) package.
     
     ```sh
     cd ~/catkin_ws/src
