@@ -25,9 +25,12 @@ My rospy tutorial.
 
 Remember to allow permission to the file (e.g. `sudo chmod +x exercise1.py`). To run the Python program: `python exercise1.py`
 
-2. At `/usr/home/"user's name"` (`"user's name"` is arbitrary), create a ROS workspace. On terminal: 
+2. At `/usr/home/"user's name"` (`"user's name"` is arbitrary), create a ROS workspace named `catkin_ws` and a ROS package named `beginner_tutorials`. On terminal: 
    ```sh
    mkdir -p ~/catkin_ws/src
+   catkin_create_pkg beginner_tutorials
+   cd ..
+   catkin_make
    ```
 3. Complete the [rospy (publisher-subscriber) tutorial](http://wiki.ros.org/ROS/Tutorials/WritingPublisherSubscriber%28python%29).
 4. Combine **ex.1** and **ex.2** -> The result is displayed on **subscriber node** (by whatever method).
