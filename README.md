@@ -16,6 +16,11 @@ My rospy tutorial.
 
 2. If **MOST** of the answer from question 1 is **YES**, do you think they are enough to construct many (simple) robotics projects?
 
+## Installation
+* Python. 
+* ROS.
+* VS Code. Python Add-In and CoPilot Add-In is recommended.
+
 ## Exercises 
 1. Construct an Python program `exercise1.py` with a **variable x** (can be a constant or user-defined) that:
 * Print "forward" if x is equal to 1. 
