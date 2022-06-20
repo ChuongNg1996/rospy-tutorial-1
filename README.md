@@ -33,7 +33,7 @@ Remember to allow permission to the file (e.g. `sudo chmod +x exercise1.py`). To
    catkin_make
    ```
 3. Complete the [rospy (publisher-subscriber) tutorial](http://wiki.ros.org/ROS/Tutorials/WritingPublisherSubscriber%28python%29). While two ROS nodes are running:
-* Open another terminal and type `rostopic list`, what are displayed? (More about [rostopic](http://wiki.ros.org/rostopic))
+* Open another terminal and type `rostopic list` (More about [rostopic](http://wiki.ros.org/rostopic)), what are displayed? 
 * Listen to `/chatter` ROS topic by typing `rostopic echo /chatter`
 * To know the type of message of `/chatter`, type `rostopic type /chatter | rosmsg show` 
 * On a new terminal, type but do not press ENTER: `rostopic pub -1 /chatter`  **AND** press TAB . What is displayed next?
