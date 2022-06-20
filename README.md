@@ -13,6 +13,7 @@ My rospy tutorial.
 * Function Call. 
 * Common programming paradigms (e.g. Object-Oriented programming).
 * Containers/Data Structures.
+* Threading.
 
 2. If **MOST** of the answer from question 1 is **YES**, do you think they are enough to construct many (simple) robotics projects?
 
