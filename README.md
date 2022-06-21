@@ -20,7 +20,7 @@ My rospy tutorial.
 ## Installation
 * Python. 
 * ROS.
-* VS Code. Python Add-In and CoPilot Add-In is recommended.
+* VS Code. Python Add-In and CoPilot Add-In are recommended.
 
 ## Exercises 
 1. Construct an Python program `exercise1.py` with a **variable x** (can be a constant or user-defined) that:
