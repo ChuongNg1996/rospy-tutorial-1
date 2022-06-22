@@ -19,7 +19,7 @@ My rospy tutorial.
 
 ## Installation
 * Python. 
-* ROS.
+* [ROS Melodic](http://wiki.ros.org/melodic/Installation/Ubuntu).
 * VS Code. Python Add-In and CoPilot Add-In are recommended.
 
 ## Exercises 
