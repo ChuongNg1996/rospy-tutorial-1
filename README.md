@@ -64,3 +64,13 @@ Remember to allow permission to the file (e.g. `sudo chmod +x exercise1.py`). To
  * Use [rostopic](http://wiki.ros.org/rostopic) commands, such as `rostopic list` to list all the ROS topics and `rostopic echo /ros_topic` to see the messages sent to the topic.
  * Notice what **number** is displayed on the topic when a key is pressed.
  * The data type of callback functions must be correct.
+
+6. Install the [ROS joy](https://github.com/ros-drivers/joystick_drivers) package
+    ```sh
+    sudo apt-get install libusb-dev
+    cd ~/catkin_ws/src
+    git clone https://github.com/ros-drivers/joystick_drivers -b melodic-devel
+    cd ..
+    catkin_make
+    ```
+    To [use the package](http://wiki.ros.org/joy/Tutorials/ConfiguringALinuxJoystick).
