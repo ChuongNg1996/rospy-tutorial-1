@@ -34,6 +34,7 @@ Remember to allow permission to the file (e.g. `sudo chmod +x exercise1.py`). To
 2. At `/usr/home/"user's name"` (`"user's name"` is arbitrary), create a ROS workspace named `catkin_ws` and a ROS package named `beginner_tutorials`. On terminal: 
    ```sh
    mkdir -p ~/catkin_ws/src
+   cd ~/catkin_ws/src
    catkin_create_pkg beginner_tutorials
    cd ..
    catkin_make
