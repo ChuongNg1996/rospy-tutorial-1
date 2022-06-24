@@ -68,9 +68,7 @@ Remember to allow permission to the file (e.g. `sudo chmod +x exercise1.py`). To
 
 
 6. Try to apply created ROS message of `msg_tutorials` to `beginner_tutorials`. In particular:
-* Add the dependency of `msg_tutorials` to `CMakeLists.txt`. Open `CMakeLists.txt` of `beginner_tutorials` package and:
-** asdad
-
+* Add the dependency of `msg_tutorials` to `CMakeLists.txt`. Open `CMakeLists.txt` of `beginner_tutorials` package and ... (writing)
 
 
 7. Install the [ROS keyboard](https://github.com/lrse/ros-keyboard) package.
