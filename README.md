@@ -59,7 +59,10 @@ Remember to allow permission to the file (e.g. `sudo chmod +x exercise1.py`). To
 * Variable x is on Publisher node.
 * The Publisher node EITHER sends (1) **value of x** OR (2) result of **condition from x** (e.g. "forward", "backward", "left", "right") to the Subscriber node. Choose one method.
 * The final message (e.g. "forward", "backward", "left", "right") is displayed on the Subscriber node.
-5. Install the [ROS keyboard](https://github.com/lrse/ros-keyboard) package.
+
+5. Complete the [tutorial of making a ROS message/msg](http://wiki.ros.org/ROS/Tutorials/CreatingMsgAndSrv) (of your own), ignore the service/srv file for now. Also, create a new ROS package with different name than `beginner_tutorials`, called `msg_tutorials`.
+
+7. Install the [ROS keyboard](https://github.com/lrse/ros-keyboard) package.
     
     ```sh
     cd ~/catkin_ws/src
