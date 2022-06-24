@@ -62,6 +62,9 @@ Remember to allow permission to the file (e.g. `sudo chmod +x exercise1.py`). To
 
 5. Complete the [tutorial of making a ROS message/msg](http://wiki.ros.org/ROS/Tutorials/CreatingMsgAndSrv) (of your own), ignore the service/srv file for now. Also, create a new ROS package with different name than `beginner_tutorials` (which is overlapped with ours), called `msg_tutorials`.
 
+6. Try to apply created ROS message of `msg_tutorials` to `beginner_tutorials`
+
+
 7. Install the [ROS keyboard](https://github.com/lrse/ros-keyboard) package.
     
     ```sh
