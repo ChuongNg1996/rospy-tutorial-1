@@ -55,7 +55,10 @@ Remember to allow permission to the file (e.g. `sudo chmod +x exercise1.py`). To
 * To know the type of message of `/chatter`, type `rostopic type /chatter | rosmsg show` 
 * On a new terminal, type but **do not press ENTER**: `rostopic pub -1 /chatter`  **AND** press **TAB** . What is displayed next?
 
-4. Combine **ex.1** and **ex.3** -> The result is displayed on **subscriber node** (by whatever method).
+4. Combine **ex.1** and **ex.3** -> The result is displayed on **subscriber node**. In paritcular:
+* Variable x is on Publisher node.
+* The Publisher node EITHER sends (1) **value of x** OR (2) result of **If condition from x** (e.g. "forward", "backward", "left", "right") to the Subscriber node. Choose one method.
+* The final message (e.g. "forward", "backward", "left", "right") is displayed on the Subscriber node.
 5. Install the [ROS keyboard](https://github.com/lrse/ros-keyboard) package.
     
     ```sh
