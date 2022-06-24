@@ -39,6 +39,15 @@ Remember to allow permission to the file (e.g. `sudo chmod +x exercise1.py`). To
    cd ..
    catkin_make
    ```
+   Source the `setup.bash` of the ROS workspace, either manually for each new terminal:
+   ```sh
+   source ~/catkin_ws/devel/setup.bash
+   ```
+   Or permanently:
+   ```sh
+   gedit ~/. bashrc
+   ```
+   COPY & PASTE & SAVE `source ~/catkin_ws/devel/setup.bash` at the end. Close and open new terminal. 
 3. Complete the [rospy (publisher-subscriber) tutorial](http://wiki.ros.org/ROS/Tutorials/WritingPublisherSubscriber%28python%29). While two ROS nodes are running:
 * Open another terminal and type `rostopic list` (More about [rostopic](http://wiki.ros.org/rostopic)), what are displayed? 
 * Listen to `/chatter` ROS topic by typing `rostopic echo /chatter`
