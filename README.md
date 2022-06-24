@@ -64,7 +64,7 @@ Remember to allow permission to the file (e.g. `sudo chmod +x exercise1.py`). To
 * The final message (e.g. "forward", "backward", "left", "right") is displayed on the Subscriber node.
 
 
-5. Complete the [tutorial of making a ROS message/msg](http://wiki.ros.org/ROS/Tutorials/CreatingMsgAndSrv) (of your own), ignore the service/srv file for now. Also, create a new ROS package with different name than `beginner_tutorials` (which is overlapped with ours), called `msg_tutorials`.
+5. Complete the [tutorial of making a ROS message/msg](http://wiki.ros.org/ROS/Tutorials/CreatingMsgAndSrv) (of your own), ignore the service/srv file for now. Also, create a new ROS package (in `~/catkin_ws/src`) with different name than `beginner_tutorials` (which is the same as ex.2), called `msg_tutorials`.
 
 
 6. Try to apply created ROS message of `msg_tutorials` to `beginner_tutorials`. In particular:
