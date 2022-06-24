@@ -23,7 +23,7 @@ My rospy tutorial.
 * VS Code. Python Add-In and CoPilot Add-In are recommended.
 
 ## Exercises 
-1. Construct an Python program `exercise1.py` with a **variable x** (can be a constant or user-defined) that:
+1. Construct a Python program `exercise1.py` with a **variable x** (can be a constant or user-defined) that:
 * Print "forward" if x is equal to 1. 
 * Print "backward" if x is equal to 2. 
 * Print "left" if x is equal to 3.
