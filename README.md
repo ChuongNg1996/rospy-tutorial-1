@@ -58,7 +58,7 @@ Remember to allow permission to the file (e.g. `sudo chmod +x exercise1.py`). To
 * On a new terminal, type but **do not press ENTER**: `rostopic pub -1 /chatter`  **AND** press **TAB** . What is displayed next?
 
 
-4. Complete the [tutorial of making a ROS message/msg](http://wiki.ros.org/ROS/Tutorials/CreatingMsgAndSrv) (of your own), ignore the service/srv file for now. Also, create a new ROS package (in `~/catkin_ws/src`) with different name than `beginner_tutorials` (which is the same as ex.2), called `msg_tutorials`.
+4. Complete the [tutorial of making a ROS message/msg](http://wiki.ros.org/ROS/Tutorials/CreatingMsgAndSrv) (of your own), ignore the service/srv file for now. Also, avoid the ROS workspace name `beginner_tutorials` (which is the same as ex.2), create a new ROS package (in `~/catkin_ws/src`) with different name for this exercise, called `msg_tutorials`.
 
 
 5. Try to apply created ROS message of `msg_tutorials` to `beginner_tutorials`. HINT:
