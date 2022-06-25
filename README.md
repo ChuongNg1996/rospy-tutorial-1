@@ -100,6 +100,44 @@ Remember to allow permission to the file (e.g. `sudo chmod +x exercise1.py`). To
      </export>
    </package>
    ```
+   In `talker.py`, import and apply `Num.msg` from `msg_tutorials`. For example:
+   ```sh
+   import rospy
+   from msg_tutorials.msg import Num #IMPORT Num
+
+   def talker():
+       pub = rospy.Publisher('chatter', Num, queue_size=10) #APPLY Num TO Publisher
+       rospy.init_node('talker', anonymous=True) 
+       rate = rospy.Rate(10) 
+       x = Num()
+       x.score = 2 #ASSIGN A VALUE to "score" MEMBER of Num
+       while not rospy.is_shutdown():
+           rospy.loginfo(x) 
+           pub.publish(x) 
+           rate.sleep()
+
+   if __name__ == '__main__':
+       try:
+           talker()
+       except rospy.ROSInterruptException:
+           pass
+   ```
+   Do the same for `listener.py`:
+   ```sh
+   import rospy
+   from msg_tutorials.msg import Num #IMPORT Num
+
+   def callback(data):
+       rospy.loginfo(rospy.get_caller_id() + 'I heard %s', data.score) #SHOW "score" MEMBER of Num
+
+   def listener():
+       rospy.init_node('listener', anonymous=True)
+       rospy.Subscriber('chatter', Num, callback)  #APPLY Num TO Subscriber
+       rospy.spin()
+
+   if __name__ == '__main__':
+       listener()
+   ```
 6. Combine **ex.1** and **ex.3** -> The result is displayed on **subscriber node**. In particular:
 * Variable x is on Publisher node.
 * The Publisher node EITHER sends (1) **value of x** OR (2) result of **condition from x** (e.g. "forward", "backward", "left", "right") to the Subscriber node. Choose one method.
