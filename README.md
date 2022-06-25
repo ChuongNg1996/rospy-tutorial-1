@@ -64,7 +64,7 @@ Remember to allow permission to the file (e.g. `sudo chmod +x exercise1.py`). To
 5. Try to apply created ROS message of `msg_tutorials` to `beginner_tutorials`. HINT:
 * Add the dependency of `msg_tutorials` to `CMakeLists.txt`. Open `CMakeLists.txt` of `beginner_tutorials` package, it should look somewhat like this (can copy & replace the whole thing):
    ```sh
-      cmake_minimum_required(VERSION 3.0.2)
+   cmake_minimum_required(VERSION 3.0.2)
    project(beginner_tutorials)
 
    find_package(catkin REQUIRED rospy std_msgs msg_tutorials)
@@ -81,7 +81,7 @@ Remember to allow permission to the file (e.g. `sudo chmod +x exercise1.py`). To
    ```
 *  Add the dependency of `msg_tutorials` to `package.xml` also, it should look somewhat like this (can copy & replace the whole thing):
    ```sh
-      <?xml version="1.0"?>
+   <?xml version="1.0"?>
    <package format="2">
      <name>beginner_tutorials</name>
      <version>0.0.0</version>
