@@ -58,17 +58,52 @@ Remember to allow permission to the file (e.g. `sudo chmod +x exercise1.py`). To
 * On a new terminal, type but **do not press ENTER**: `rostopic pub -1 /chatter`  **AND** press **TAB** . What is displayed next?
 
 
-4. Combine **ex.1** and **ex.3** -> The result is displayed on **subscriber node**. In particular:
+4. Complete the [tutorial of making a ROS message/msg](http://wiki.ros.org/ROS/Tutorials/CreatingMsgAndSrv) (of your own), ignore the service/srv file for now. Also, create a new ROS package (in `~/catkin_ws/src`) with different name than `beginner_tutorials` (which is the same as ex.2), called `msg_tutorials`.
+
+
+5. Try to apply created ROS message of `msg_tutorials` to `beginner_tutorials`. HINT:
+* Add the dependency of `msg_tutorials` to `CMakeLists.txt`. Open `CMakeLists.txt` of `beginner_tutorials` package, it should look somewhat like this (can copy & replace the whole thing):
+   ```sh
+      cmake_minimum_required(VERSION 3.0.2)
+   project(beginner_tutorials)
+
+   find_package(catkin REQUIRED rospy std_msgs msg_tutorials)
+   catkin_package(CATKIN_DEPENDS rospy std_msgs msg_tutorials )
+   include_directories(${catkin_INCLUDE_DIRS})
+
+   catkin_install_python(PROGRAMS scripts/talker.py
+     DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+   )
+
+   catkin_install_python(PROGRAMS scripts/talker.py scripts/listener.py
+     DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+   )
+   ```
+*  Add the dependency of `msg_tutorials` to `package.xml` also, it should look somewhat like this (can copy & replace the whole thing):
+   ```sh
+      <?xml version="1.0"?>
+   <package format="2">
+     <name>beginner_tutorials</name>
+     <version>0.0.0</version>
+     <description>The beginner_tutorials package</description>
+     <maintainer email="user@todo.todo">user</maintainer>
+     <license>TODO</license>
+     <buildtool_depend>catkin</buildtool_depend>
+     <depend>msg_tutorials</depend>
+     <depend>std_msgs</depend>
+     <depend>rospy</depend>
+
+     <!-- The export tag contains other, unspecified, tags -->
+     <export>
+       <!-- Other tools can request additional information be placed here -->
+
+     </export>
+   </package>
+   ```
+6. Combine **ex.1** and **ex.3** -> The result is displayed on **subscriber node**. In particular:
 * Variable x is on Publisher node.
 * The Publisher node EITHER sends (1) **value of x** OR (2) result of **condition from x** (e.g. "forward", "backward", "left", "right") to the Subscriber node. Choose one method.
 * The final message (e.g. "forward", "backward", "left", "right") is displayed on the Subscriber node.
-
-
-5. Complete the [tutorial of making a ROS message/msg](http://wiki.ros.org/ROS/Tutorials/CreatingMsgAndSrv) (of your own), ignore the service/srv file for now. Also, create a new ROS package (in `~/catkin_ws/src`) with different name than `beginner_tutorials` (which is the same as ex.2), called `msg_tutorials`.
-
-
-6. Try to apply created ROS message of `msg_tutorials` to `beginner_tutorials`. In particular:
-* Add the dependency of `msg_tutorials` to `CMakeLists.txt`. Open `CMakeLists.txt` of `beginner_tutorials` package and ... (writing)
 
 
 7. Install the [ROS keyboard](https://github.com/lrse/ros-keyboard) package.
