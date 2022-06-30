@@ -11,7 +11,7 @@ My rospy tutorial.
 * For Loop.
 * While Loop.
 * Function Call. 
-* Common programming paradigms (e.g. Object-Oriented programming).
+* Common programming paradigms (e.g. Procedural Programming, Object-Oriented Programming, etc.).
 * Containers/Data Structures.
 * Threading.
 
