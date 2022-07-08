@@ -164,8 +164,9 @@ Remember to allow permission to the file (e.g. `sudo chmod +x exercise1.py`). To
  * Notice what **number** is displayed on the topic when a key is pressed.
  * The data type of callback functions must be correct.
 
+8. Learn to use [ROS launch](https://www.clearpathrobotics.com/assets/guides/melodic/ros/Launch%20Files.html), then open all of your nodes in previous exercieses with a single ROS Launch file.
 
-8. Install the [ROS joy](https://github.com/ros-drivers/joystick_drivers) package
+9. Install the [ROS joy](https://github.com/ros-drivers/joystick_drivers) package
     ```sh
     sudo apt-get install libusb-dev
     cd ~/catkin_ws/src
