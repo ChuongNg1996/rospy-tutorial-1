@@ -71,10 +71,6 @@ Remember to allow permission to the file (e.g. `sudo chmod +x exercise1.py`). To
    catkin_package(CATKIN_DEPENDS rospy std_msgs msg_tutorials )
    include_directories(${catkin_INCLUDE_DIRS})
 
-   catkin_install_python(PROGRAMS scripts/talker.py
-     DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
-   )
-
    catkin_install_python(PROGRAMS scripts/talker.py scripts/listener.py
      DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
    )
