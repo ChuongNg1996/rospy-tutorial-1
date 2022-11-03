@@ -46,7 +46,7 @@ Remember to allow permission to the file (e.g. `sudo chmod +x exercise1.py`). To
    ```
    Or permanently:
    ```sh
-   gedit ~/. bashrc
+   gedit ~/.bashrc
    ```
    Copy & Paste & Save `source ~/catkin_ws/devel/setup.bash` at the end of `bashrc`. Close and open new terminal. 
    
