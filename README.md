@@ -98,6 +98,7 @@ Remember to allow permission to the file (e.g. `sudo chmod +x exercise1.py`). To
    ```
    In `talker.py`, import and apply `Num.msg` from `msg_tutorials`. For example:
    ```sh
+   #!/usr/bin/env python
    import rospy
    from msg_tutorials.msg import Num #IMPORT Num
 
@@ -120,6 +121,7 @@ Remember to allow permission to the file (e.g. `sudo chmod +x exercise1.py`). To
    ```
    Do the same for `listener.py`:
    ```sh
+   #!/usr/bin/env python
    import rospy
    from msg_tutorials.msg import Num #IMPORT Num
 
